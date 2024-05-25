@@ -1,10 +1,16 @@
+const withTM = require('next-transpile-modules')(['some-module', 'and-another']);
+
 /** @type {import('next').NextConfig} */
-module.exports = {
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
+module.exports = withTM({
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback.fs = false;
+    }
+    return config;
   },
-  webpack: (config) => {
-    return config
+  reactStrictMode: true,
+  swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true,
   },
-}
+});
