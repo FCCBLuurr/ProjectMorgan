@@ -1,0 +1,61 @@
+# Node.js
+node_modules
+.next
+out
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+.eggs
+*.pyd
+
+# Django
+*.sqlite3
+db.sqlite3
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.coverage
+.coverage.*
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# General
+*.swp
+*.swo
+*.swn
+.env
+.idea/
+.vscode/
+*.iml
+
+# Test Coverage
+coverage/
+htmlcov/
+.tox/
+.nox/
+
+# Migrations
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Static and Media
+staticfiles/
+media/
+
+# Others
+*.bak
+*.orig
