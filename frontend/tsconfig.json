@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "incremental": true,
+      "jsx": "preserve",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "outDir": "./dist"
+    },
+    "include": ["main/**/*.ts", "renderer/**/*.ts", "renderer/**/*.tsx"],
+    "exclude": ["node_modules"]
+  }
+  
